@@ -1040,7 +1040,7 @@ align-self: center;
         padding-top: 0;
         display: flex;
         flex-direction: row !important;
-        column-gap: 4rem !important;
+        column-gap: 2.2rem !important;
     }
 
     .nav__link {
