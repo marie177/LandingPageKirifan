@@ -1103,6 +1103,10 @@ align-self: center;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
+
+    .about_text{
+        align-self: normal;
+    }
 }
 
 /* For large devices */
