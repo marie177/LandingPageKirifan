@@ -96,6 +96,39 @@ var swiperProjects = new Swiper(".prototipos__container", {
     keyboard: true,
 });
 
+/*=============== SWIPER SPONSORS ===============*/
+var swiperProjects = new Swiper(".logo__container", {
+    /* debugger;*/
+    loop: true,
+    spaceBetween: 24,
+
+    //cssMode: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay:true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 2,
+            spaceBetween: -56,
+        },
+        800: {
+            slidesPerView: 3,
+            spaceBetween: -56,
+        },
+
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: -56,
+        },
+    },
+    mousewheel: true,
+    keyboard: true,
+});
 /*SCROLL UP*/
 
 function scrollUp() {

@@ -135,6 +135,10 @@ button {
     font-size: 25px;
 }
 
+.align-sc{
+align-self: center;
+}
+
 /*=============== HEADER & NAV ===============*/
 .header {
     width: 100%;
@@ -214,10 +218,48 @@ button {
         cursor: pointer;
     }
 
+    .specialty {
+        padding: 0px !important;
+        margin: 10px !important;
+    }
+
     .projects__img {
         height: 250px;
         min-width: 150px;
         width: 150px !important;
+    }
+
+    .presentation {
+        padding: 60px 60px 0px 60px !important;
+    }
+
+
+    .presentation,
+    .about_text p {
+        font-size: 12px !important;
+        color: #fff !important;
+    }
+
+    #about{
+        background-color: #0000009c ;
+    }
+    .imgAbout {
+        mix-blend-mode: overlay ;
+        width: 100% !important;
+    }
+
+    .about_text {
+        width: 90% !important;
+        position: absolute !important;
+        padding: auto !important;
+    }
+
+    .about_text h4{
+        color: #fff !important;
+    }
+
+    .title {
+        font-size: 20px ;
     }
 }
 
@@ -345,9 +387,9 @@ button {
 
 .about_text {
     width: 60%;
-    height: 100%;
+    max-height: 100%;
     background-color: transparent;
-    padding: 60px 0px 0px 45px;
+    padding: 30px 30px 0px 30px;
 }
 
 .about_text h4 {
@@ -381,7 +423,7 @@ button {
 
 /*=============== SPECIALTY ===============*/
 .specialty {
-    padding: 2rem !important;
+    padding: 2rem ;
 }
 
 .specialty__button {
@@ -390,6 +432,7 @@ button {
 
 .specialty__category {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     display: grid;
     grid-template-columns: 200px;
     justify-content: center;
@@ -634,7 +677,15 @@ button {
     transform: translateX(.25rem);
 }
 
-/*=============== LOGOS ===============*/
+/*=============== LOGOS 1 ===============*/
+.products__content{
+    padding: 0;
+}
+.products__content .logo__container{
+    border-top: none;
+    padding: 15px !important;
+}
+/*=============== LOGOS 2 ===============*/
 .logo {
     background-color: #fff;
 }
@@ -649,15 +700,15 @@ button {
 }
 
 .logo__img {
-    width: 80px;
+    width: 100px;
     mix-blend-mode: luminosity;
-    opacity: .4;
+    opacity: .6;
     transition: .4s;
 }
 
 .logo__img:hover {
     mix-blend-mode: initial;
-    opacity: .8;
+    opacity: 1;
 }
 
 /*=============== BLOG ===============*/
@@ -753,6 +804,11 @@ button {
     margin-bottom: .75rem;
 }
 
+.footer__data-line{
+   border-top: 1px solid var(--first-color);
+   padding-top: 10px;
+}
+
 .footer__newsletter {
     display: flex;
     column-gap: .5rem;
@@ -768,12 +824,23 @@ button {
 }
 
 .footer__button {
-    padding: .75rem;
+    padding: .5rem;
     font-size: 2rem;
     border-radius: .25rem;
     display: inline-flex;
     background-color: var(--first-color);
 }
+
+.footer__newsletter a{
+    font-size: 1rem;
+}
+.footer__newsletter a:hover {
+    transform: rotateY(-20deg);
+    transition: .4s;
+    cursor: pointer;
+
+}
+
 
 .footer__button i {
     transform: rotate(-30deg);
@@ -896,7 +963,7 @@ button {
     }
 
     .presentation {
-        padding: 10px;
+        padding: 10px !important;
     }
 
     .presentation,
@@ -935,7 +1002,8 @@ button {
 
     .products__content {
         grid-template-columns: repeat(2, 200px);
-        padding-bottom: 3rem;
+        /* padding-bottom: 3rem; */
+        padding-bottom: 0;
     }
 
     .blog__content {
@@ -945,6 +1013,10 @@ button {
 
     .footer__newsletter {
         width: 350px;
+    }
+
+    .title {
+        font-size: 20px;
     }
 }
 
