@@ -33,7 +33,7 @@
     :root {
         --biggest-font-size: 5.5rem;
         --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
+        --h2-font-size: 1.2rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
@@ -135,8 +135,8 @@ button {
     font-size: 25px;
 }
 
-.align-sc{
-align-self: center;
+.align-sc {
+    align-self: center;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -240,11 +240,12 @@ align-self: center;
         color: #fff !important;
     }
 
-    #about{
-        background-color: #0000009c ;
+    #about {
+        background-color: #000000a6 !important;
     }
+
     .imgAbout {
-        mix-blend-mode: overlay ;
+        mix-blend-mode: overlay;
         width: 100% !important;
     }
 
@@ -254,12 +255,17 @@ align-self: center;
         padding: auto !important;
     }
 
-    .about_text h4{
+    .about_text h4 {
         color: #fff !important;
     }
 
     .title {
-        font-size: 20px ;
+        font-size: 20px;
+    }
+
+    .logo__img {
+        mix-blend-mode: initial !important;
+        opacity: 1 !important;
     }
 }
 
@@ -423,7 +429,7 @@ align-self: center;
 
 /*=============== SPECIALTY ===============*/
 .specialty {
-    padding: 2rem ;
+    padding: 2rem;
 }
 
 .specialty__button {
@@ -476,7 +482,7 @@ align-self: center;
     width: 100%;
     height: 390px;
     padding: 60px 230px 0px 230px;
-    background-image: linear-gradient(to right, rgb(92 149 42 / 52%), rgb(61 0 48 / 77%)), url("images/galeria-16-1030x687.jpg");
+    background-image: linear-gradient(to right, rgb(43 70 20 / 67%), rgb(61 0 48 / 88%)), url(images/galeria-16-1030x687.jpg), url("images/galeria-16-1030x687.jpg");
     background-repeat: no-repeat;
     background-position: 11% 0%;
     background-attachment: fixed;
@@ -498,8 +504,8 @@ align-self: center;
 }
 
 .presentation .logo__img {
-    opacity: .8;
-    mix-blend-mode: overlay;
+    opacity: 1;
+    mix-blend-mode: initial;
     width: 80px;
 }
 
@@ -678,13 +684,15 @@ align-self: center;
 }
 
 /*=============== LOGOS 1 ===============*/
-.products__content{
+.products__content {
     padding: 0;
 }
-.products__content .logo__container{
+
+.products__content .logo__container {
     border-top: none;
     padding: 15px !important;
 }
+
 /*=============== LOGOS 2 ===============*/
 .logo {
     background-color: #fff;
@@ -804,9 +812,9 @@ align-self: center;
     margin-bottom: .75rem;
 }
 
-.footer__data-line{
-   border-top: 1px solid var(--first-color);
-   padding-top: 10px;
+.footer__data-line {
+    border-top: 1px solid var(--first-color);
+    padding-top: 10px;
 }
 
 .footer__newsletter {
@@ -831,9 +839,10 @@ align-self: center;
     background-color: var(--first-color);
 }
 
-.footer__newsletter a{
+.footer__newsletter a {
     font-size: 1rem;
 }
+
 .footer__newsletter a:hover {
     transform: rotateY(-20deg);
     transition: .4s;
@@ -971,9 +980,11 @@ align-self: center;
         font-size: var(--smaller-font-size);
         color: #fff;
     }
-    #about{
+
+    #about {
         background-color: #0000009c;
     }
+
     .imgAbout {
         mix-blend-mode: overlay;
         width: 100%;
@@ -985,12 +996,17 @@ align-self: center;
         padding: auto;
     }
 
-    .about_text h4{
+    .about_text h4 {
         color: #fff;
     }
 
     .title {
         font-size: 20px;
+    }
+
+    .logo__img {
+        mix-blend-mode: initial !important;
+        opacity: 1 !important;
     }
 }
 
@@ -1018,6 +1034,7 @@ align-self: center;
     .title {
         font-size: 20px;
     }
+
 }
 
 /* For medium devices */
@@ -1094,6 +1111,10 @@ align-self: center;
         margin: auto;
     }
 
+    .blog__image img{
+        width: 100%;
+        height: 400px;
+    }
     .products__filters {
         grid-template-columns: repeat(3, 200px);
     }
@@ -1104,7 +1125,7 @@ align-self: center;
         align-items: center;
     }
 
-    .about_text{
+    .about_text {
         align-self: normal;
     }
 }
@@ -1251,6 +1272,11 @@ align-self: center;
         grid-template-columns: repeat(2, 450px);
         column-gap: 5rem;
         padding-top: 2rem;
+    }
+
+    .blog__image img{
+        width: 100%;
+        height: 400px;
     }
 
     .footer__content {

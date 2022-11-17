@@ -87,6 +87,10 @@ var swiperProjects = new Swiper(".prototipos__container", {
         el: ".swiper-pagination",
     },
     breakpoints: {
+        850: {
+            slidesPerView: 2,
+            spaceBetween: -6,
+        },
         1200: {
             slidesPerView: 2,
             spaceBetween: -56,
