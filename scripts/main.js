@@ -76,20 +76,25 @@ linkProducts.forEach(l => l.addEventListener('click', activeProducts));
 var swiperProjects = new Swiper(".prototipos__container", {
     /* debugger;*/
     loop: true,
-    spaceBetween: 24,
 
     //cssMode: true,
     navigation: {
+
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     pagination: {
         el: ".swiper-pagination",
+        // type: 'bullets',
     },
     breakpoints: {
+        350: {
+            slidesPerView: 1,
+            spaceBetween: 0,     
+        },
         850: {
             slidesPerView: 2,
-            spaceBetween: -6,
+            spaceBetween: 0,
         },
         1200: {
             slidesPerView: 2,

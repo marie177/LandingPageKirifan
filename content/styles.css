@@ -267,6 +267,10 @@ button {
         mix-blend-mode: initial !important;
         opacity: 1 !important;
     }
+
+    .prototipos__container .container{
+        margin: 0;
+    }
 }
 
 /* Show menu */
@@ -605,6 +609,7 @@ button {
 /*=============== PROTOTIPOS ===============*/
 .prototipos {
     background-color: #fff;
+    padding-bottom: 0;
 }
 
 .prototipos__content {
@@ -772,6 +777,7 @@ button {
 
 .blog__description {
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .blog__footer,
@@ -848,6 +854,12 @@ button {
     transition: .4s;
     cursor: pointer;
 
+}
+
+.footer__information a{
+cursor: pointer;
+text-decoration: none;
+color:  var(--text-color);
 }
 
 
@@ -962,10 +974,6 @@ button {
         row-gap: 1rem;
     }
 
-    .projects__img {
-        height: 200px !important;
-    }
-
     .specialty {
         padding: 0px !important;
         margin: 0px !important;
@@ -1007,6 +1015,24 @@ button {
     .logo__img {
         mix-blend-mode: initial !important;
         opacity: 1 !important;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .projects__img {
+        height: 200px !important;
+        width: 270px !important;
+        min-width: 270px !important;
+    }
+
+    .prototipos__container .swiper-button-prev{
+        left: 0rem !important;
+        top: 10rem !important;
+    }
+
+    .prototipos__container .swiper-button-next{
+        right: 0rem !important;
+        top: 10rem !important;
     }
 }
 
@@ -1117,6 +1143,20 @@ button {
     }
     .products__filters {
         grid-template-columns: repeat(3, 200px);
+    }
+
+    .prototipos__container .container{
+        margin: 0 !important;
+    }
+
+    .prototipos__container .swiper-button-prev{
+        left: 0rem !important;
+        top: 15rem !important;
+    }
+
+    .prototipos__container .swiper-button-next{
+        right: 0rem !important;
+        top: 15rem !important;
     }
 
     .prototipos__content,
@@ -1253,6 +1293,16 @@ button {
 
     .prototipos__special {
         margin-bottom: 1rem;
+    }
+
+    .prototipos__container .swiper-button-prev{
+        left: 1rem !important;
+        top: 15rem !important;
+    }
+
+    .prototipos__container .swiper-button-next{
+        right: 1rem !important;
+        top: 15rem !important;
     }
 
     .logo__container {
