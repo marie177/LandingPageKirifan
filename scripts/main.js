@@ -101,7 +101,6 @@ var swiperProjects = new Swiper(".prototipos__container", {
             spaceBetween: -56,
         },
     },
-    mousewheel: true,
     keyboard: true,
 });
 
@@ -111,11 +110,6 @@ var swiperProjects = new Swiper(".logo__container", {
     loop: true,
     spaceBetween: 24,
 
-    //cssMode: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
     autoplay:true,
     pagination: {
         el: ".swiper-pagination",
