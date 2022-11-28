@@ -485,7 +485,7 @@ button {
 .presentation {
     width: 100%;
     height: 390px;
-    padding: 60px 230px 0px 230px;
+    padding: 112px 230px 0px 230px;
     background-image: linear-gradient(to right, rgb(43 70 20 / 67%), rgb(61 0 48 / 88%)), url(images/galeria-16-1030x687.jpg), url("images/galeria-16-1030x687.jpg");
     background-repeat: no-repeat;
     background-position: 11% 0%;
