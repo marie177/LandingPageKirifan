@@ -803,6 +803,8 @@ button {
 }
 
 /*=============== FOOTER ===============*/
+
+
 .footer {
     background-color: var(--black-color);
     padding: 4rem 0 2.5rem;
@@ -1493,4 +1495,13 @@ color:  var(--text-color);
 
 .projects__button:hover {
     transform: translateX(.25rem);
+}
+
+.whatsapp{
+    position: fixed;
+    padding: 1rem 1rem;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 90px;
 }
