@@ -136,9 +136,16 @@ var swiperProjects = new Swiper(".logo__container", {
 
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
+    const btnWhatsapp = document.getElementById('whatsapp');
 
-    if (this.scrollY >= 350) scrollUp.classList.add('show-scroll');
-    else scrollUp.classList.remove('show-scroll');
+    if (this.scrollY >= 3750){
+        scrollUp.classList.add('show-scroll');
+        btnWhatsapp.classList.add('unshow-whatsapp');
+    } 
+    else{
+        scrollUp.classList.remove('show-scroll');
+        btnWhatsapp.classList.remove('unshow-whatsapp');
+    } 
 }
 
 window.addEventListener('scroll', scrollUp);

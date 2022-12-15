@@ -271,6 +271,11 @@ button {
     .prototipos__container .container{
         margin: 0;
     }
+
+    .whatsapp{
+        width: 85px !important;
+        right: 0 !important;
+    }
 }
 
 /* Show menu */
@@ -1092,7 +1097,8 @@ color:  var(--text-color);
         position: relative;
         font-size: var(--normal-font-size);
         text-transform: initial;
-        color: var(--first-color);
+        /* color: var(--first-color); */
+        color: #fff;
     }
 
     .nav__link::after {
@@ -1100,7 +1106,8 @@ color:  var(--text-color);
         position: absolute;
         width: 1px;
         height: 12px;
-        background-color: var(--text-color-light);
+        /* background-color: var(--text-color-light); */
+        background-color: var(--first-color);
         transform: translateX(1.25rem);
         top: 0;
         bottom: 0;
@@ -1497,11 +1504,26 @@ color:  var(--text-color);
     transform: translateX(.25rem);
 }
 
+
+/* Button Whatsapp*/
+
 .whatsapp{
     position: fixed;
     padding: 1rem 1rem;
     display: inline-block;
-    bottom: 0;
-    right: 0;
-    width: 90px;
+    bottom: 0.5rem !important;
+    right: 1rem;
+    width: 95px;
+    transition: .5s;
+    z-index: var(--z-fixed);
 }
+
+.whatsapp:hover{
+    width: 105px;
+}
+
+/* Show Button Whatsapp*/
+.unshow-whatsapp{
+    bottom: -30%  !important;
+}
+
