@@ -2,8 +2,40 @@
     background: linear-gradient(hsl(76deg 56% 46%) -4%, hsl(0deg 0% 100%) 46%);
 } */
 
-main{
-    background: linear-gradient( hsl(0deg 0% 100%) 18%, rgba(148, 183, 52, 0.955) 46%);
+
+
+.historia__title,
+.historia__data-title {
+    color: var(--first-color);
+}
+
+.historia__title {
+    font-weight: 500;
+    font-size: var(--biggest-font-size);
+    margin-bottom: 0rem;
+    background-color: #ffffff9e;
+    margin-top: 5px;
+    width: 400px;
+    padding-left: 1rem;
+}
+
+.historia__title2{
+    font-weight: 700;
+    font-size: 7rem;
+    margin-bottom: 0rem;
+    background-color: #8e0b727d;
+    margin-top: 5px;
+    width: 600px;
+    padding-left: 1rem;
+    color: aliceblue;
+}
+
+.historia__title span {
+    color: var(--first-color);
+}
+
+.historia__description {
+    margin-bottom: 2rem;
 }
 
 
@@ -29,8 +61,9 @@ main{
 }
 
 .nosotros__title {
+    text-align: center;
     font-weight: 900;
-    font-size: var(--biggest-font-size);
+    font-size: var(--h1-font-size);
     margin-bottom: 1.5rem;
 }
 
@@ -39,7 +72,9 @@ main{
 }
 
 .nosotros__description {
+    color: #404e18;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 
@@ -56,8 +91,9 @@ main{
 
 @media screen and (min-width: 1200px) {
 
-    .nosotros__container {
-        padding-top: 10rem;
+    /* .nosotros__container,  */
+    .historia__container {
+        padding-top: 5rem;
     }
 
     .nosotros__data {
@@ -69,7 +105,7 @@ main{
     }
 
     .nosotros__description {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     .nosotros__scroll {
@@ -77,6 +113,12 @@ main{
     }
 }
 
+@media screen and (max-width: 767px) {
+    .equipo__content {
+        grid-template-columns: repeat(2, 200px) !important;
+    }
+
+}
 
 
 /* Alternative code, for larger screens */
@@ -105,4 +147,8 @@ main{
     height: 200px;
     object-fit: cover;
     border-radius: 5%;
+}
+
+.equipo__content p{
+    color: #404e18;
 }
