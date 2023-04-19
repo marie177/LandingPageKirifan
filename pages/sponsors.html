@@ -12,7 +12,41 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='../content//swiper-bundle.min.css' rel='stylesheet'>
     <link href='../content/styles.css' rel='stylesheet'>
-    <link href='../content/styles/nosotros.css' rel='stylesheet'>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            ;
+        }
+
+        .sponsors__title h1 {
+            line-height: 100%;
+            font-weight: 700;
+            font-size: 7rem;
+            margin-bottom: 0rem;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .sponsors__title h2 {
+            line-height: 100%;
+            font-weight: 400;
+            font-size: 5rem;
+            margin-bottom: 0rem;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .sponsors__title p {
+            font-size: 1rem !important;
+            color: aliceblue;
+            width: 50%;
+            text-align: justify;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,24 +64,27 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link active-link"> Inicio </a>
+                    <li class="nav__item" >
+                        <a href="../index.html" class="nav__link "> Inicio </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="nosotros.html" class="nav__link"> Nosotros </a>
+                        <a href="nosotros.html" class="nav__link" > Nosotros </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="competencia.html" class="nav__link"> Competencia </a>
+                        <a href="competencia.html" class="nav__link"> Competencia
+                        </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="prototipos.html" class="nav__link"> Prototipos </a>
+                        <a href="prototipos.html" class="nav__link"> Prototipos
+                        </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="sponsors.html" class="nav__link"> Sponsors </a>
+                        <a href="sponsors.html" class="nav__link active-link">
+                            Sponsors </a>
                     </li>
 
                     <li class="nav__item">
@@ -71,6 +108,71 @@
     <!-- MAIN  -->
     <main>
 
+        <section>
+            <div style="background-image: url('../content/images/galeria-28-1030x687.jpg'); " class="bg__image">
+                <div
+                    style="display: flex; flex-direction: column;justify-content: flex-end;padding-bottom: 80px;background-color: #00000096; position: absolute; width: 100%; height: 100%; text-align: center;">
+                    <div style="align-self: center;max-width:60%;display: flex;flex-direction: column;align-items: start;"
+                        class="sponsors__title">
+
+                        <h2>NUESTROS</h2>
+                        <h1>SPONSORS</h1>
+
+                        <p>
+                            En esta sección queremos agradecer a nuestros Sponsors por su participación en el
+                            proceso. Forman una parte muy importante para el equipo y sin ellos,
+                            esto no sería posible.
+                        </p>
+
+                        <a href="#" class="button"
+                            style="background-color: hsl(313deg 86% 30%); padding: 10px 15px; margin-top: 20px;"> Quiero
+                            ser Sponsor! </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="grid" style=" grid-template-columns: repeat(3, 300px);  gap: 3rem; place-content: center;">
+
+                <div style="width:250px; height: 125px;">
+                    <img src="../content/images/sponsors/logo1.jpg" alt="" style="width:100%; height: 100%; object-fit: contain;">
+                </div>
+
+                <div style="width:250px; height: 125px;">
+                    <img src="../content/images/sponsors/logo10.jpg" alt="" style="width:100%; height: 100%; object-fit: contain;">
+                </div>
+
+                <div style="width:250px; height: 125px;">
+                    <img src="../content/images/sponsors/logo13.jpg" alt="" style="width:100%; height: 100%; object-fit: contain;">
+                </div>
+
+
+                <div style="width:250px; height: 125px;">
+                    <img src="../content/images/sponsors/logo15.jpg" alt="" style="width:100%; height: 100%; object-fit: contain;">
+                </div>
+
+                <div style="width:250px; height: 125px;">
+                    <img src="../content/images/sponsors/logo16.jpg" alt="" style="width:100%; height: 100%; object-fit: contain;">
+                </div>
+
+                <div style="width:250px; height: 125px;">
+                    <img src="../content/images/sponsors/logo8.jpg" alt="" style="width:100%; height: 100%; object-fit: contain;">
+                </div>
+
+                <!-- <div style="width:300px; height: 150px; background-color: antiquewhite;border-top: hsl(313deg 86% 30%) solid 8px;">
+                    <img src="../content/images/sponsors/logo1.jpg" alt="" style="width:100%; height: 100%; object-fit: contain;">
+                </div>
+
+                <div style="width:300px; height: 150px; background-color: antiquewhite;border-top: hsl(313deg 86% 30%) solid 8px;">
+
+                </div>
+
+                <div style="width:300px; height: 150px; background-color: antiquewhite;border-top: hsl(313deg 86% 30%) solid 8px;">
+
+                </div> -->
+            </div>
+        </section>
 
 
 

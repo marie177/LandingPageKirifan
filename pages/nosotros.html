@@ -73,21 +73,17 @@
 
         <section class="historia">
             <div class="historia__container">
-
-                <div
-                    style=" background-attachment: fixed;height: 600px; position: relative;background-image: url('../content/images/galeria-16-1030x687.jpg');  background-size: cover; background-repeat: no-repeat;">
+                <div style="background-image: url('../content/images/galeria-16-1030x687.jpg'); " class="bg__image">
                     <div
                         style="display: flex; flex-direction: column;justify-content: center;background-color: #00000096; position: absolute; width: 100%; height: 100%; text-align: center;">
-                        <div>
-                            <h1 class=" historia__title2">SOBRE KIRIFAN</h1>
+                        <div style="align-self: center;max-width:60%;" class="historia__title">
+                            <h1 style="letter-spacing: 15px;">SOBRE KIRIFAN</h1>
 
-                            <p style="font-size: 1.2rem !important; color: aliceblue;">
-                                Somos el primer y único equipo argentino de eficiencia energética, dedicado al desarrollo y construcción de vehículos eléctricos.
+                            <p>
+                                Somos un equipo de estudiantes de la Universidad Tecnológica Nacional - FRGP dedicado al
+                                desarrollo y construcción de vehículos eléctricos.
                             </p>
 
-                            <!-- <div style="margin-top:12px">
-                                <a href="#mision" class="nosotros__button">VER MÁS</a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -114,14 +110,13 @@
 
                 </div>
 
-                <div
-                    style=" background-attachment: fixed;height: 300px; position: relative;background-image: url('../content/images/DSC_0892.JPG');  background-size: cover; background-repeat: no-repeat;">
-                    <div
-                        style="display: flex; flex-direction: column;justify-content: center;background-color: #00000096; position: absolute; width: 100%; height: 100%; text-align: center;">
+                <div style="height: 300px;background-image: url('../content/images/DSC_0892.JPG');" class="bg__image">
+                    <div style="display: flex; flex-direction: column;justify-content: center;background-color: #00000096; position: absolute; width: 100%; height: 100%; text-align: center;"
+                        class="historia__title">
                         <div>
-                            <h1 class="historia__title2" style="font-size: 4rem;">NUESTRA HISTORIA</h1>
+                            <h1 class="fs-1-5rem">NUESTRA HISTORIA</h1>
 
-                            <p style="font-size: 1.2rem !important; color: aliceblue;">
+                            <p style="padding: 0.2rem;">
                                 Al comienzo únicamente existían dos equipos, los cuáles eran totalmente opuestos en
                                 su visión.
                             </p>
@@ -133,9 +128,9 @@
                     </div>
                 </div>
 
-                <div style="padding: 8rem 10rem 2rem 10rem;" id="historia">
+                <div class="section__nosotros" id="historia">
                     <h1 class="nosotros__subtitle">Nada es tan facil como parece</h1>
-                    <p class="nosotros__description" style="font-size: 1.2rem !important;">
+                    <p class="nosotros__description">
                         Al comienzo únicamente existían dos equipos, los cuáles eran diametralmente opuestos en su
                         visión. El equipo formado por estudiantes de ingeniería automotriz propuso un modelo
                         sustentable, basado en un chasis liviano y resistente de madera de Kiri y propulsión
@@ -165,23 +160,18 @@
             </div>
         </section>
 
-        <div class="nosotros grid" id="nosotros" style="padding: 5rem 10rem 2rem 10rem;">
-            <div class="nosotros__container">
-                <div class="nosotros__content">
-                    <h1 class="nosotros__subtitle">Nuestro Equipo</h1>
-                    <p class="nosotros__description">
-                        Nuestro equipo está conformado por diversas areas, donde cada una cumple una función
-                        especifica dentro del equipo y la existencia de cada una tiene gran importancia en Kirifan.
-                        Contamos con un área de Propulsión, un área de Chasis, un área de
-                        Carrocería, un área de Administración y un área de Tecnología.
-                    </p>
+        <div class="nosotros section__nosotros" id="nosotros">
 
-                </div>
-            </div>
-            <!-- <img src="../content/images/team.png" alt="" class="home__img" /> -->
+            <h1 class="nosotros__subtitle">Nuestro Equipo</h1>
+            <p class="nosotros__description">
+                Nuestro equipo está conformado por diversas areas, donde cada una cumple una función
+                especifica dentro del equipo y la existencia de cada una tiene gran importancia en Kirifan.
+                Contamos con un área de Propulsión, un área de Chasis, un área de
+                Carrocería, un área de Administración y un área de Tecnología.
+            </p>
 
-            <div class="equipo_container" style="padding-top: 4rem">
-                <h2 style="font-size: 1.8rem "> Administración </h2>
+            <div class="equipo__container" >
+                <h2> Administración </h2>
                 <div class="equipo__content grid">
                     <div>
                         <img src="../content/images/Ignacio-Celano-774x1030.jpeg" alt="">
@@ -216,7 +206,7 @@
                 </div>
             </div>
 
-            <div class="equipo_container">
+            <div class="equipo__container">
                 <h2 style="font-size: 1.8rem "> Chasis </h2>
                 <div class="equipo__content grid">
                     <div>

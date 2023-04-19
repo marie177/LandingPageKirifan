@@ -1,8 +1,7 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-
+﻿@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
-    --header-height: 3.5rem;
+    --header-height: 2.7rem;
     /*========== Colors ==========*/
     --first-color: hsl(313deg 86% 30%);
     --first-color-alt: hsl(36, 72%, 44%);
@@ -14,7 +13,7 @@
     --body-color: hsl(206, 4%, 97%);
     --container-color: #fff;
     /*========== Font and typography ==========*/
-    --body-font: 'Lato', sans-serif;
+    --body-font: 'Oswald', sans-serif;
     --biggest-font-size: 6rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -1096,7 +1095,7 @@ color:  var(--text-color);
     .nav__link {
         position: relative;
         font-size: var(--normal-font-size);
-        font-weight:600;
+        font-weight:400;
         text-transform: initial;
         color: var(--first-color); 
         /* color: #fff; */
@@ -1108,7 +1107,7 @@ color:  var(--text-color);
         width: 1px;
         height: 12px;
         /* background-color: var(--text-color-light); */
-        background-color: var(--first-color);
+        /* background-color: var(--first-color); */
         transform: translateX(1.25rem);
         top: 0;
         bottom: 0;
@@ -1120,16 +1119,17 @@ color:  var(--text-color);
     }
 
     .scroll-header .nav__link {
-        color: var(--text-color);
+        color: var(--text-color);     
+        letter-spacing: 0.4px;
     }
 
     .scroll-header .active-link {
         color: var(--title-color);
     }
 
-    .scroll-header .active-link::after {
+    /* .scroll-header .active-link::after {
         background-color: var(--title-color);
-    }
+    } */
 
     .home {
         grid-template-columns: repeat(2, 1fr);
@@ -1528,3 +1528,10 @@ color:  var(--text-color);
     bottom: -30%  !important;
 }
 
+.bg__image {
+    background-attachment: fixed;
+    height: 650px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
