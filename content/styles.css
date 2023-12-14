@@ -4,6 +4,7 @@
     --header-height: 2.7rem;
     /*========== Colors ==========*/
     --first-color: hsl(313deg 86% 30%);
+    --first-color-transparent: hsla(313, 86%, 30%, 0.571);
     --first-color-alt: hsl(36, 72%, 44%);
     --black-color: hsl(206, 12%, 12%);
     --card-color: hsl(0, 0%, 90%);

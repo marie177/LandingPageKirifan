@@ -1,0 +1,20 @@
+/* .logo__sponsors:hover {
+    transition: .5s;
+}
+.logo__sponsors {
+    transition: .5s;
+} */
+.logo__sponsors {
+    transition: .5s;
+} 
+
+.logo__sponsors:hover .effect_logo {
+    visibility: visible !important;
+    transition: .5s;
+    background-color: #ffffff92;
+}
+
+.effect_logo {
+    transition: .3s;
+}
+
